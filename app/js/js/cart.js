@@ -36,7 +36,7 @@ require(["../../config"],function () {
                             html = $("<div class='info'>您还没有登录！请登录</div>")
                             $(".section").html(html);
                         }
-                        $.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?", {userID: this.userID}, function (data) {
+                        $.getJSON("https://datainfo.duapp.com/shopdata/getCar.php?callback=?", {userID: this.userID}, function (data) {
                            layer.closeAll("loading");
                             _this.cartData = data;
                             _this.totalNum = data.length;
@@ -115,7 +115,7 @@ require(["../../config"],function () {
                     updateCartData: function () {
 
                         $.ajax({
-                            url: " http://datainfo.duapp.com/shopdata/updatecar.php",
+                            url: " https://datainfo.duapp.com/shopdata/updatecar.php",
                             data: {
                                 userID: this.userID,
                                 goodsID: this.goodsID,

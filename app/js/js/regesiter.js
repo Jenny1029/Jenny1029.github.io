@@ -17,7 +17,7 @@ require(['../../config'],function(){
 				if($psw!=$confirmPsw){
 					alert('俩次密码输入不一致,请重新输入');
 				}
-			$.get("http://datainfo.duapp.com/shopdata/userinfo.php",{'status':'register','userID':$uname,'password':$psw},function(data){
+			$.get("https://datainfo.duapp.com/shopdata/userinfo.php",{'status':'register','userID':$uname,'password':$psw},function(data){
 				if(data=1){
 					window.location.href = "login.html";
 				}
