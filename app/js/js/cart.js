@@ -26,9 +26,9 @@ require(["../../config"],function () {
                         this.getData();
                     },
                     getData: function () {
-                       /* layer.ready(function () {
+                        layer.ready(function () {
                             layer.load(1);
-                        })*/
+                        })
                         var html = "";
 
                         var _this = this;

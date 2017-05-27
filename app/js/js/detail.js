@@ -15,13 +15,11 @@ require(['../../config'],function(){
 		$(".header-btn.next  .iconfont").on("click",function(){
 			window.location.href="cart.html";
 		});
-		$(".detail  .right").on("click",function () {
-            window.location.href="detailData.html";
-        })
+		
 
-       /* layer.ready(function () {
+        layer.ready(function () {
             layer.load(1);
-        });*/
+        });
 
 		var detail = function () {
             var $wrapper = $(".swiper-wrapper");
@@ -38,6 +36,9 @@ require(['../../config'],function(){
             });
             return {
                 init: function () {
+                    $(".detail  .right").on("click",function () {
+                        window.location.href="detailData.html?goodsID="+goodsID;
+                     });
                     this.getData();
                     this.addCart();
                 },

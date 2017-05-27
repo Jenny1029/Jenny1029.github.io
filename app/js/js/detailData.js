@@ -20,6 +20,7 @@ require(['../../config'],function(){
 		        getData:function () {
 		            $.getJSON("https://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{"goodsID":goodsID},function (data) {     
 		            	console.log(data);
+		            	console.log(1);
 		            	var result = data[0].detail;		         
 		            	var newData = result.split("。");
 		            	var str1 = '';
