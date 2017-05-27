@@ -1,0 +1,103 @@
+.form.regesiter {
+  top: 0px;
+  height: 460px;
+}
+
+.form.regesiter h3 {
+  float: left;
+}
+
+.form.regesiter .quicklogin {
+  margin-top: 10px;
+  float: right;
+  color: #e74f36;
+}
+
+.form.regesiter .notice {
+  margin-top: 10px;
+  color: #e74f36;
+}
+
+.form.regesiter ul li {
+  border-radius: 3px;
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 40px;
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+.form.regesiter ul li .loginicon {
+  font-size: 20px !important;
+  color: #666;
+}
+
+.form.regesiter .password {
+  position: relative;
+}
+
+.form.regesiter .password .pwdprogress {
+  width: 300px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 40px;
+  /*display:none;*/
+}
+
+.form.regesiter .password .pwdprogress span {
+  display: none;
+  position: absolute;
+  left: 0;
+  height: 3px;
+}
+
+.form.regesiter .password .pwdprogress .danger {
+  width: 100px;
+  background: red;
+}
+
+.form.regesiter .password .pwdprogress .waning {
+  width: 200px;
+  background: orange;
+}
+
+.form.regesiter .password .pwdprogress .safe {
+  width: 300px;
+  background: green;
+}
+
+.form.regesiter .messageVerify {
+  padding: 0;
+  background: none;
+}
+
+.form.regesiter .messageVerify .verifytext {
+  float: left;
+  width: 100px;
+  padding-left: 10px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.form.regesiter .messageVerify .messagebtn {
+  cursor: pointer;
+  background: #ccc;
+  width: 120px;
+}
+
+.form.regesiter .regesiterbtn {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 25px;
+  background: #d72b34;
+  border: none;
+}

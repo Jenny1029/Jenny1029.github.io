@@ -1,0 +1,95 @@
+@charset "utf-8";
+$fontcolor:#636363;
+$baseSize:12px;
+$hoverColor:#e74f36;
+$gray:#999;
+$linkscolor:#7d7d7d;
+.form.regesiter {
+	top: 0px;
+    height: 460px;
+    h3 {
+        float: left;
+    }
+    .quicklogin {
+    	margin-top: 10px;
+        float: right;
+        color: $hoverColor;
+    }
+    .notice{
+        margin-top: 10px;
+        color: $hoverColor;
+    }
+    ul li{
+    	border-radius: 3px;
+        margin-top: 10px;
+        background: rgba(255, 255, 255, 0.8);
+        width: 280px;
+        height: 40px;
+        line-height: 40px;
+        padding-left: 20px;
+        .loginicon {
+                font-size: 20px!important;
+                color: #666;
+            }
+    }
+    .password{
+    	position: relative;
+    	.pwdprogress{
+    		width: 300px;
+    		height: 3px;
+    		position: absolute;
+    		left: 0;
+    		top: 40px;
+    		/*display:none;*/
+    		span{
+    			display: none;
+    			position: absolute;
+    			left: 0;
+    			height: 3px;
+    		}
+    		.danger{
+    			width: 100px;
+    			background: red;
+    		}
+    		.waning{
+    			width: 200px;
+    			background: orange;
+    		}
+    		.safe{
+    			width: 300px;
+    			background:green;
+    		}
+    	}
+    }
+    .messageVerify{
+    	padding: 0;
+    	background: none;
+        .verifytext {
+                float: left;
+                width: 100px;
+                padding-left: 10px;
+                height: 100%;
+                background: white;
+                border-radius: 3px;
+                margin-right: 10px;
+            }
+            .messagebtn{
+            	cursor: pointer;
+            	background: #ccc;
+            	width: 120px;
+            }
+            
+    }
+    .regesiterbtn{
+         margin-top: 20px;
+            width: 300px;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 25px;
+            background: #d72b34;
+            border: none;
+    }
+}

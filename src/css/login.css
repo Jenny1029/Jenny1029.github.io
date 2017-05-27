@@ -1,0 +1,253 @@
+@charset "UTF-8";
+.header {
+  width: 100%;
+  height: 95px;
+}
+
+.header .headercontent {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.header .headercontent .logo {
+  float: left;
+  width: 230px;
+  height: 43px;
+}
+
+.header .headercontent .logo img {
+  width: 100%;
+}
+
+.header .headercontent .headerright {
+  float: right;
+}
+
+.header .headercontent .headerright .service {
+  float: left;
+  width: 240px;
+  height: 24px;
+  margin-right: 16px;
+}
+
+.header .headercontent .headerright .service img {
+  width: 100%;
+}
+
+.header .headercontent .headerright .help {
+  position: relative;
+  color: #7d7d7d;
+  float: right;
+  height: 12px;
+  padding: 2px 0 0 8px;
+  border-left: 1px solid #999;
+}
+
+.header .headercontent .headerright .help:hover ul {
+  display: block;
+}
+
+.header .headercontent .headerright .help:hover ul:hover {
+  display: block;
+}
+
+.header .headercontent .headerright .help ul {
+  display: none;
+  position: absolute;
+  border: 1px solid #ccc;
+  background: white;
+  border-top: 0;
+  left: 0px;
+  top: 16px;
+  z-index: 99;
+  text-align: center;
+}
+
+.header .headercontent .headerright .help li {
+  width: 80px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.loginbody {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+}
+
+.loginbody .form {
+  width: 300px;
+  padding: 20px 25px;
+  position: absolute;
+  z-index: 10;
+  height: 380px;
+  right: 100px;
+  top: 30px;
+  border-radius: 5px;
+  background: rgba(200, 200, 200, 0.8);
+}
+
+.loginbody .form h3 {
+  font-size: 30px;
+  font-family: "楷体";
+  color: #333333;
+}
+
+.loginbody .form li {
+  margin-top: 20px;
+  color: #7d7d7d;
+}
+
+.loginbody .form ul .user, .loginbody .form ul .password {
+  background: rgba(255, 255, 255, 0.8);
+  width: 280px;
+  height: 40px;
+  padding-left: 20px;
+  line-height: 40px;
+  border-radius: 3px;
+}
+
+.loginbody .form ul .user .loginicon, .loginbody .form ul .password .loginicon {
+  font-size: 20px !important;
+  color: #666;
+}
+
+.loginbody .form input {
+  width: 260px;
+  border: none;
+  background: none;
+}
+
+.loginbody .form .verify {
+  padding-left: 0;
+  line-height: 40px;
+  background: none;
+  height: 40px;
+}
+
+.loginbody .form .verify .verifytext {
+  float: left;
+  width: 100px;
+  padding-left: 10px;
+  height: 100%;
+  background: white;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+
+.loginbody .form .verify .verifynum {
+  font-family: "new york";
+  color: cadetblue;
+  font-size: 24px;
+  float: left;
+  width: 100px;
+  height: 40px;
+  padding-left: 10px;
+  border-radius: 3px;
+  background: white;
+  margin-right: 10px;
+}
+
+.loginbody .form .verify a:hover {
+  color: #7d7d7d;
+}
+
+.loginbody .form .autologin input {
+  width: auto;
+}
+
+.loginbody .form .autologin .auto {
+  float: left;
+}
+
+.loginbody .form .autologin .auto label {
+  color: #7d7d7d;
+}
+
+.loginbody .form .autologin .forget {
+  float: right;
+}
+
+.loginbody .form .autologin .forget a:nth-child(2) {
+  color: #e74f36;
+  padding-left: 5px;
+  border-left: 1px solid #999;
+}
+
+.loginbody .form .loginbtn {
+  margin-top: 20px;
+  width: 300px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 20px;
+  color: white;
+  letter-spacing: 25px;
+  background: #d72b34;
+  border: none;
+}
+
+.loginbody .form .loginbtn:hover {
+  background: #F07A0A;
+}
+
+.loginbody .form .changepwd {
+  float: right;
+  margin-top: 10px;
+}
+
+.loginbody .form .othermethod {
+  margin-top: 30px;
+  border-top: 1px solid #DFDFDF;
+  color: #7d7d7d;
+  padding-top: 15px;
+}
+
+.loginbody .form .othermethod img {
+  margin-right: 5px;
+  display: inline-block;
+}
+
+.loginbody .loginbgWrap {
+  position: absolute;
+  z-index: 6;
+  width: 700%;
+}
+
+.loginbody .loginbg {
+  float: left;
+  width: 14.28%;
+  height: 500px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.loginbody .loginbg:nth-child(1) {
+  background-image: url(../img/loginbg1.jpg);
+}
+
+.loginbody .loginbg:nth-child(2) {
+  background-image: url(../img/loginbg2.jpg);
+}
+
+.loginbody .loginbg:nth-child(3) {
+  background-image: url(../img/loginbg3.jpg);
+}
+
+.loginbody .loginbg:nth-child(4) {
+  background-image: url(../img/loginbg4.jpg);
+}
+
+.loginbody .loginbg:nth-child(5) {
+  background-image: url(../img/loginbg5.jpg);
+}
+
+.loginbody .loginbg:nth-child(6) {
+  background-image: url(../img/loginbg6.jpg);
+}
+
+.loginbody .loginbg:nth-child(7) {
+  background-image: url(../img/loginbg1.jpg);
+}

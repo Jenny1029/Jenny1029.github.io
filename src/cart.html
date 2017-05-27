@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" type="image/x-icon" media="all" href="img/icon.jpg">
+		<link rel="stylesheet" type="text/css" href="css/common.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<link rel="stylesheet" type="text/css" href="font/iconfont.css" />
+		<link rel="stylesheet" type="text/css" href="css/cart.css" />
+		<title>购物车页</title>
+	</head>
+
+	<body>
+		<!--header-->
+		<header></header>
+		<!--.sidebar-->
+		<div class="sidebar"></div>
+		<div class="header">
+			<div class="headercontent clearfix">
+				<a href="/" target="_self" class="logo">
+					<img src="img/logo.jpg" />
+				</a>
+				<div class="search-suggest">
+					<form name="search-form">
+						<div class="yxt-search">
+							<input type="text" placeholder="瑞思" class="search-input" />
+							<button class="search-btn">搜索</button>
+						</div>
+					</form>
+					<div class="search-result"></div>
+					<p class="recommendlist">
+						<span><a href="###">进口奶粉</a></span>
+						<span><a href="###">新会员特卖</a></span>
+						<span><a href="productDetail.html">鲜花</a></span>
+						<span><a href="###">纸尿裤</a></span>
+						<span><a href="###">好礼兑换</a></span>
+						<span><a href="###">门店快提</a></span>
+						<span><a href="###">美团</a></span>
+					</p>
+				</div>
+			</div>
+		</div>
+
+		<!--cart-->
+		<div class="cart">
+			<div class="cartcontent">
+				<div class="cartmain clearfix">
+					<ul class="cart-nav clearfix">
+						<li class="active">
+							<a href="###"><span class="all">全部商品</span><span class="num">18</span></a>
+						</li>
+						<li>
+							<a href="###"><span class="increase">降价商品</span><span class="num">2</span></a>
+						</li>
+						<li>
+							<a href="###"><span class="shortstock">库存紧张</span><span class="num">3</span></a>
+						</li>
+					</ul>
+					<div class="goods-list clearfix checkboxall">
+						<div class="goods-nav clearfix">
+							<ul class="left">
+								<li><input type="checkbox" class="cart-checkedall"/>全选</li>
+								<li class="goods">商品</li>
+								<li>商品信息</li>
+							</ul>
+							<ul class="right">
+								<li>单价</li>
+								<li class="amount">数量</li>
+								<li>金额</li>
+								<li>操作</li>
+							</ul>
+						</div>
+						<div class="goods-container">
+						</div>
+					</div>
+					<div class="cart-toolar checkboxall">
+						<input type="checkbox" class="cart-checkedall" />全选
+						<a href="javascript:;" class="delete">删除</a>
+						<div class="right">
+							<div class="totalnum">已选商品<span class="red">0</span>件</div>
+							<div class="totalmoney">合计：不含运费<span class="red">0.00</span></div>
+							<div class="paymoney">结算</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<script type="text/html" id="goodsitem">
+			{{each cart as v k}}
+			<ul class="goods-item clearfix" data-id="{{v.id}}">
+				<li class="checkbox"><input type="checkbox" /></li>
+				<li class="goods_img"><img src="{{data.type[k].pic_small}}" /></li>
+				<li class="goods_name">
+					<a href="productDetail.html">{{data.goods_name}}</a>
+				</li>
+				<li class="goods_type">类型：<span>{{data.type[k].type}}</span></li>
+				<div class="right">
+					<li class="goods_price">¥<span>{{data.type[k].sale_price}}</span></li>
+					<li class="goods_amount" data-stock = "{{data.type[k].stock}}"><span class="decrease">-</span><input type="text" value="{{v.amount}}" class="amount" /><span class="increase">+</span></li>
+					<li class="goods_totalprice">￥<span class="totalmoney">{{data.type[k].sale_price*v.amount}}</span></li>
+					<li class="operate">
+						<a class="delete" href="javascript:;">删除</a>
+					</li>
+				</div>
+
+			</ul>
+			{{/each}}
+		</script>
+
+		<!--footer-->
+		<footer></footer>
+		<script src="require.js" data-main="js/js/cart.js" defer async="true"></script>
+	</body>
+
+</html>

@@ -1,0 +1,353 @@
+@charset "utf-8";
+
+$fontcolor:#636363;
+$baseSize:12px;
+$hoverColor:#e74f36;
+$gray:#999;
+$linkscolor:#7d7d7d;
+
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+fieldset,
+input,
+button,
+textarea,
+p,
+blockquote,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "微软雅黑";
+    color: #000;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+fieldset,
+img {
+    border: 0;
+    display: block;
+//  float: left;
+}
+
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+strong,
+th,
+var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+capation,
+th {
+    text-align: left;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 100%;
+    font-weight: normal;
+}
+
+
+/*
+q:before,
+q:after {
+    content: ' '
+}
+
+abbr,
+acronym {
+    border: 0;
+}*/
+
+a {
+    text-decoration: none;
+    color: $linkscolor;
+}
+
+a:hover {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.clear:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+i {
+    font-style: normal;
+}
+
+input {
+    padding: 0;
+    outline: none;
+}
+
+textarea {
+    outline: none;
+}
+
+.clearfix:before, .clearfix:after {   
+    content:" ";   
+    display:table;   
+}   
+.clearfix:after{   
+    clear:both;   
+    overflow:hidden;   
+}   
+.clearfix{   
+    *zoom:1;   
+}  
+.header .search-result .result-item{
+    font-size: 16px;
+    padding-left: 15px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px dotted #ddd;
+}
+
+//sidebar
+.sidebar {
+    border-right: 5px solid black;
+    width: 39px;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: 4;
+    .sidebar-tree {
+        width: 36px;
+        position: absolute;
+        right: 0;
+        .sidebar-tabs-item {
+            position: relative;
+            width: 36px;
+            height: 40px;
+            margin-bottom: 7px;
+        }
+        .contact {
+            position: absolute;
+            left: 41px;
+            top: 0;
+            z-index: 3;
+            .qq {
+                display: block;
+                line-height: 40px;
+                border-radius: 3px;
+                color: white;
+                height: 40px;
+                width: 65px;
+                padding-left: 20px;
+                background: #d40715 url(../img/qqimg.png) no-repeat 6px 12px;
+            }
+            .consult {
+                display: block;
+                line-height: 40px;
+                border-radius: 3px;
+                color: white;
+                height: 40px;
+                width: 75px;
+                padding-left: 10px;
+                background: #d40715;
+            }
+        }
+    }
+    .sidebar-tabs-item.bottom {
+        cursor: pointer;
+        width: 36px;
+        height: 40px;
+        right: -5px;
+        position: absolute;
+        bottom: 0px;
+    }
+    .sideicon {
+        width: 41px;
+        position: absolute;
+        right: -5px;
+        display: block;
+        font-size: 30px!important;
+        color: white;
+        text-align: center;
+        line-height: 40px;
+        background: black;
+        border-radius: 3px 0 0 3px;
+        z-index: 5;
+    }
+    .sidehovercontent {
+        position: absolute;
+        width: 75px;
+        padding-left: 10px;
+        top: 0;
+        left: 40px;
+        color: white;
+        line-height: 40px;
+        background: #d40715;
+        border-radius: 3px;
+        height: 40px;
+        z-index: 3;
+    }
+}
+
+
+header {
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    .fixtop {
+        width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        .left span a {
+            color:black;
+            &:hover{
+                color: $hoverColor;
+            }
+        }
+        .right .toplinks {
+            float: left;
+            color: $fontcolor;
+            li {
+                float: left;
+                padding: 0 4px;
+                margin: 0 8px;
+                &:nth-child(6) span {
+                    float: left;
+                    margin:10px 8px 0 0;
+                    width: 16px;
+                    height: 16px;
+                    background: url(../img/yxtcomimg.png) no-repeat 0px -2px;
+                	}
+                a {
+                    color: $fontcolor;
+                }
+                &:hover a{
+                		color:#ff0000;
+                	}
+            }
+        }
+    }
+}
+
+footer{
+    width:100%;
+    .footercontent{
+        width: 1200px;
+        margin: 0 auto;
+        .footerlinks{
+            height: 190px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            .linksitem>li{
+                width: 192px;
+                float: left;
+                h4{
+                    text-align: center;
+                    color: #565656;
+                    font-size: 18px;
+                    font-weight: bold;
+                    margin: 23px 0 15px;
+                }
+                p{
+                            color: $linkscolor;
+                        }
+                ul{
+                    margin: 10px 0 10px 60px;
+                    li{
+                        margin-top: 10px;
+                        
+                    }
+                }
+            }
+        }
+        .footerbottom{
+            margin-top: 30px;
+            .footeroperation{
+                line-height: 20px;
+                margin-bottom: 10px;
+                font-size: 16px;
+                text-align: center;
+                li{
+                    padding: 0 8px;
+                    display: inline-block;
+                    border-right: 1px solid $gray;
+                    &:nth-last-child(1){
+                        border: none;
+                    }
+                }
+            }
+            p{
+                color: #666;
+                letter-spacing: 1px;
+                text-align: center;
+                margin-bottom: 10px;
+            }
+                .police-img{
+                    width: 20px;
+                    height: 20px;
+                    display: inline-block;
+                }
+                .footerimg{
+                    text-align: center;
+                    margin-bottom: 30px;
+                    li{
+                        display: inline-block;
+                        margin-right: 15px;
+                        height: 40px;
+                        img{
+                            height: 100%;
+                            width: auto;
+                        }
+                    }
+                }
+        }
+    }
+}

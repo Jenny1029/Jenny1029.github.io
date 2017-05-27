@@ -1,0 +1,224 @@
+@charset "utf-8";
+$fontcolor:#636363;
+$baseSize:12px;
+$hoverColor:#e74f36;
+$gray:#999;
+$linkscolor:#7d7d7d;
+.header {
+    width: 100%;
+    height: 95px;
+    .headercontent {
+        width: 1200px;
+        margin: 0 auto;
+        padding: 25px;
+        .logo {
+            float: left;
+            width: 230px;
+            height: 43px;
+            img {
+                width: 100%;
+            }
+        }
+        .headerright {
+            float: right;
+            .service {
+                float: left;
+                width: 240px;
+                height: 24px;
+                margin-right: 16px;
+                img {
+                    width: 100%;
+                }
+            }
+            .help {
+                position: relative;
+                color: $linkscolor;
+                float: right;
+                height: 12px;
+                padding: 2px 0 0 8px;
+                border-left: 1px solid $gray;
+                &:hover {
+                    ul {
+                        display: block;
+                        &:hover {
+                            display: block;
+                        }
+                    }
+                }
+                ul {
+                    display: none;
+                    position: absolute;
+                    border: 1px solid #ccc;
+                    background: white;
+                    border-top: 0;
+                    left: 0px;
+                    top: 16px;
+                    z-index: 99;
+                    text-align: center;
+                }
+                li {
+                    width: 80px;
+                    height: 36px;
+                    line-height: 36px;
+                }
+            }
+        }
+    }
+}
+
+.loginbody {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    .form {
+        width: 300px;
+        padding: 20px 25px;
+        position: absolute;
+        z-index: 10;
+        height: 380px;
+        right: 100px;
+        top: 30px;
+        border-radius: 5px;
+        background: rgba(200, 200, 200, 0.8);
+        h3 {
+            font-size: 30px;
+            font-family: "楷体";
+            color: #333333;
+//          text-align: center;
+        }
+        li{
+            margin-top: 20px;
+            color: $linkscolor;
+        }
+        ul .user,ul .password {
+            background: rgba(255, 255, 255, 0.8);
+            width: 280px;
+            height: 40px;
+            padding-left: 20px;
+            line-height: 40px;
+            border-radius: 3px;
+            .loginicon {
+                font-size: 20px!important;
+                color: #666;
+            }
+           
+        }
+         input {
+                width: 260px;
+                border: none;
+                background: none;
+            }
+        .verify {
+            padding-left:0;
+            line-height: 40px;
+            background: none;
+            height: 40px;
+            .verifytext {
+                float: left;
+                width: 100px;
+                padding-left: 10px;
+                height: 100%;
+                background: white;
+                border-radius: 3px;
+                margin-right: 10px;
+            }
+            .verifynum{
+                font-family: "new york";
+                color:cadetblue;
+                font-size: 24px;
+                float: left;
+                width: 100px;
+                height: 40px;
+                padding-left: 10px;
+                border-radius: 3px;
+                background: white;
+                margin-right: 10px;
+            }
+            a:hover{
+                color: $linkscolor;
+            }
+        }
+        .autologin{
+            input{
+                width: auto;
+            }
+            .auto{
+                float: left;
+                label{
+                    color: $linkscolor;
+                }
+            }
+            .forget{
+                float: right;
+                a:nth-child(2){
+                    color: $hoverColor;
+                    padding-left: 5px;
+                    border-left: 1px solid $gray;
+                }
+            }
+        }
+        .loginbtn{
+            margin-top: 20px;
+            width: 300px;
+            height:40px;
+            text-align: center;
+            line-height: 40px;
+            font-size: 20px;
+            color: white;
+            letter-spacing: 25px;
+            background: #d72b34;
+            border: none;
+            &:hover{
+                background: #F07A0A;
+            }
+        }
+        .changepwd{
+                float: right;
+                margin-top: 10px;
+            }
+            .othermethod{
+                margin-top:30px;
+                border-top: 1px solid #DFDFDF;
+                color: $linkscolor;
+                padding-top:15px;
+                img{
+                    margin-right: 5px;
+                    display: inline-block;
+                }
+            }
+    }
+    .loginbgWrap {
+        position: absolute;
+        z-index: 6;
+        width: 700%;
+    }
+    .loginbg {
+        float: left;
+        width: 14.28%;
+        height: 500px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        &:nth-child(1) {
+            background-image: url(../img/loginbg1.jpg);
+        }
+        &:nth-child(2) {
+            background-image: url(../img/loginbg2.jpg);
+        }
+        &:nth-child(3) {
+            background-image: url(../img/loginbg3.jpg);
+        }
+        &:nth-child(4) {
+            background-image: url(../img/loginbg4.jpg);
+        }
+        &:nth-child(5) {
+            background-image: url(../img/loginbg5.jpg);
+        }
+        &:nth-child(6) {
+            background-image: url(../img/loginbg6.jpg);
+        }
+        &:nth-child(7) {
+            background-image: url(../img/loginbg1.jpg);
+        }
+    }
+}

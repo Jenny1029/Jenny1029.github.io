@@ -1,0 +1,88 @@
+{
+	"goods_id": 10001,
+	"goods_name": "花莳间 基地直供家用鲜花 云南昆明斗南香水百合",
+	"goods_subtitle":"家用婚庆商务用花",
+	"goods_price": 108.00,
+	"type": {
+		"1000101": {
+			"id": "1000101",
+			"type": "白色三头10支",
+			"sale_price": "89.00",
+			"pic_small":"img/proimg-small1.jpg",
+			"pic_large":"img/proimg-large1.jpg",
+			"stock": 12
+		},
+		"1000102": {
+			"id": "1000102",
+			"type": "粉色多头4个花头以上10支",
+			"pic_small":"img/proimg-small3.jpg",
+			"pic_large":"img/proimg-large3.jpg",
+			"sale_price": "89.00",
+			"stock": 74
+		},
+		"1000103": {
+			"id": "1000103",
+			"type": "香水百合花束1头白色 瓶插花",
+			"pic_small":"img/proimg-small2.jpg",
+			"pic_large":"img/proimg-large2.jpg",
+			"sale_price": "89.00",
+			"stock": 307
+		},
+		"1000104": {
+			"id": "1000104",
+			"type": "19朵戴安娜玫瑰礼盒A款",
+			"pic_small":"img/proimg-small7.jpg",
+			"pic_large":"img/proimg-large7.jpg",
+			"sale_price": "159.00",
+			"stock": 39
+		},
+		"1000105": {
+			"id": "1000105",
+			"type": "19朵戴安娜玫瑰礼盒B款",
+			"pic_small":"img/proimg-small8.jpg",
+			"pic_large":"img/proimg-large8.jpg",
+			"sale_price": "136.00",
+			"stock": 399
+		},
+		"1000106": {
+			"id": "1000106",
+			"type": "香水百合 白色一头10支",
+			"pic_small":"img/proimg-small5.jpg",
+			"pic_large":"img/proimg-large5.jpg",
+			"sale_price": "99.00",
+			"stock": 56
+		},
+		"1000107":{
+		"id": "1000107",
+			"type": "红玫瑰玫瑰捧花鲜花",
+			"pic_small":"img/proimg-small9.jpg",
+			"pic_large":"img/proimg-large9.jpg",
+			"sale_price": "99.00",
+			"stock": 88
+		},
+		"1000108":{
+		"id": "1000108",
+			"type": "彩色玫瑰口红20支/扎",
+			"pic_small":"img/proimg-small10.jpg",
+			"pic_large":"img/proimg-large10.jpg",
+			"sale_price": "99.00",
+			"stock": 88
+		},
+		"1000109":{
+		"id": "1000109",
+			"type": "玫瑰永生花礼盒F款",
+			"pic_small":"img/proimg-small11.jpg",
+			"pic_large":"img/proimg-large11.jpg",
+			"sale_price": "99.00",
+			"stock": 88
+		},
+		"10001010":{
+		"id": "10001010",
+			"type": "粉色勿忘我+水晶草花束",
+			"pic_small":"img/proimg-small4.jpg",
+			"pic_large":"img/proimg-large4.jpg",
+			"sale_price": "66.00",
+			"stock": 88
+		}
+	}
+}
