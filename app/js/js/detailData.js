@@ -18,7 +18,7 @@ require(['../../config'],function(){
 		            this.getData();
 		        },
 		        getData:function () {
-		            $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{"goodsID":goodsID},function (data) {     
+		            $.getJSON("https://datainfo.duapp.com/shopdata/getGoods.php?callback=?",{"goodsID":goodsID},function (data) {     
 		            	console.log(data);
 		            	var result = data[0].detail;		         
 		            	var newData = result.split("。");

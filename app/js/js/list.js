@@ -35,7 +35,7 @@ require(['../../config'],function(){
 		            this.bindEvent();
 		        },
 		        getClassData:function () {
-		          	$.get("http://datainfo.duapp.com/shopdata/getclass.php",function (data) {
+		          	$.get("https://datainfo.duapp.com/shopdata/getclass.php",function (data) {
 				        var str = "";
 				        for(var i=0;i<data.length;i++){
 			              	str+='<li data-id="'+data[i].classID+'">'+data[i].className+'</li>'
@@ -48,7 +48,7 @@ require(['../../config'],function(){
 		        	/*layer.ready(function(){
 		        	    layer.load(1);
 		        	})*/
-		            $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?&classID="+classID+"&pageCode="+pageCode+"&linenumber="+linenumber,function (data){
+		            $.getJSON("https://datainfo.duapp.com/shopdata/getGoods.php?callback=?&classID="+classID+"&pageCode="+pageCode+"&linenumber="+linenumber,function (data){
 		            	aData = data;
 		            	layer.closeAll( "loading" );
 						var str = "";

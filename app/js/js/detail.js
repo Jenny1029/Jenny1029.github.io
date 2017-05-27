@@ -42,7 +42,7 @@ require(['../../config'],function(){
                     this.addCart();
                 },
                 getData: function () {
-                    $.getJSON("http://datainfo.duapp.com/shopdata/getGoods.php?callback=?", {"goodsID": goodsID}, function (data) {
+                    $.getJSON("https://datainfo.duapp.com/shopdata/getGoods.php?callback=?", {"goodsID": goodsID}, function (data) {
                         layer.closeAll("loading")
                         goodsData = data;
                         var Imgs = JSON.parse(goodsData[0].imgsUrl);
@@ -72,7 +72,7 @@ require(['../../config'],function(){
                     var number;
                     $(".add").on("click", function () {
                         //获取用户的所有的购物车信息
-                        $.getJSON("http://datainfo.duapp.com/shopdata/getCar.php?callback=?", {userID: userID}, function (data) {
+                        $.getJSON("https://datainfo.duapp.com/shopdata/getCar.php?callback=?", {userID: userID}, function (data) {
                             allCartData = data;
                             for (var i = 0, len = allCartData.length; i < len; i++) {
                                 if (allCartData[i].goodsID == goodsID) {
@@ -86,7 +86,7 @@ require(['../../config'],function(){
 
                             //更新购物车信息
                             $.ajax({
-                                url: "http://datainfo.duapp.com/shopdata/updatecar.php",
+                                url: "https://datainfo.duapp.com/shopdata/updatecar.php",
                                 data: {
                                     goodsID: goodsID,
                                     userID: userID,

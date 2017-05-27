@@ -26,7 +26,7 @@ require(["../../config"],function () {
             var user = $(".user input").val();
             var pwd =$(".password input").val();
             console.log(user,pwd);
-            $.getJSON("http://datainfo.duapp.com/shopdata/userinfo.php?",
+            $.getJSON("https://datainfo.duapp.com/shopdata/userinfo.php?",
                 {status:"login",userID:user,password:pwd},function (data) {
                 console.log(data);
                     if(data=="0") {

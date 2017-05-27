@@ -13,7 +13,7 @@ require(["../../config"],function () {
         })
 
         var str="";
-        $.getJSON("http://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function (data) {
+        $.getJSON("https://datainfo.duapp.com/lottery/getsuerfr.php?callback=?",function (data) {
             console.log(data);
             for(var i=0;i<data.length;i++){
 

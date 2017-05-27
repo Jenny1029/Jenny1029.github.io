@@ -19,7 +19,7 @@ require(["../../config"],function () {
 
         var userID =JSON.parse( localStorage.getItem("user")).userID;
         console.log(userID);
-        $.getJSON("http://datainfo.duapp.com/shopdata/getuser.php?callback=?",{userID:userID},function (data) {
+        $.getJSON("https://datainfo.duapp.com/shopdata/getuser.php?callback=?",{userID:userID},function (data) {
             console.log(data);
             var user = data;
             console.log(user[0].userimg_url,user[0].userID);
